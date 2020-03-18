@@ -8,7 +8,6 @@ import { GlobalModule } from '@app/global.module';
 
 import { DashboardRoutes } from '@app/dashboard/dashboard.routing';
 import { DashboardComponent } from '@app/dashboard/dashboard/dashboard.component';
-import { UserCreateEditDialog } from '@app/shared/user-create-edit-dialog/user-create-edit-dialog.component';
 
 @NgModule({
   imports: [
@@ -19,7 +18,6 @@ import { UserCreateEditDialog } from '@app/shared/user-create-edit-dialog/user-c
     AppMaterialModule,
     RouterModule.forChild(DashboardRoutes)
   ],
-  declarations: [DashboardComponent, UserCreateEditDialog],
-  entryComponents: [UserCreateEditDialog]
+  declarations: [DashboardComponent]
 })
 export class DashboardModule {}
