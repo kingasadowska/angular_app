@@ -29,7 +29,7 @@ export class AuthenticationService {
   login(
     payload: Authentication.LoginPayload
   ): Observable<Authentication.Credentials> {
-    return this.httpClient.post('/login', payload).pipe(
+    return this.httpClient.post('/dashboard', payload).pipe(
       map((body: Authentication.Credentials) => {
         this.setCredentials(body);
         return body;

@@ -62,7 +62,7 @@
           <div class="col-xs-12">
             <button
               class="btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light"
-              [disabled]="loginForm.invalid || isLoading"
+              [routerLink]="['/login']"
             >
               <app-button-loader
                 [isLoading]="isLoading"
