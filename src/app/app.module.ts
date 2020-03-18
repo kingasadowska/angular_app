@@ -11,6 +11,7 @@ import { AppRoutes } from '@app/app.routing';
 import { AppComponent } from '@app/app.component';
 import { CoreModule } from '@app/core';
 import { SharedModule } from '@app/shared';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,7 +23,8 @@ import { SharedModule } from '@app/shared';
     NgbModule,
     RouterModule.forRoot(AppRoutes),
     CoreModule,
-    SharedModule
+    SharedModule,
+    FlexLayoutModule
   ],
   bootstrap: [AppComponent]
 })

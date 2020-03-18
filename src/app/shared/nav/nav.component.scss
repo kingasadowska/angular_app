@@ -1,0 +1,53 @@
+.mat-toolbar {
+  height: 65px;
+}
+
+.nav-wrapper {
+  height: 50px;
+
+  a {
+    font-size: 25px;
+    margin-top: 15px;
+    color: rgb(255, 255, 255);
+    &:hover::before {
+      background-color: #e4eeec;
+      color: black;
+    }
+  }
+
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .example-icon {
+    .mat-icon {
+      font-size: 40px;
+      height: 40px;
+      width: 40px;
+    }
+
+    margin-top: 15px;
+  }
+}
+
+a::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: rgb(233, 232, 230);
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: color 0.1s, transform 0.2s ease-out;
+}
+a:active::before {
+  background-color: rgb(238, 236, 232);
+}
+a:hover::before,
+a:focus::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
